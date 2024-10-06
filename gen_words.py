@@ -25,7 +25,7 @@ def power(x, y):
 phase_acc = (2**(N-1)-1)
 trot = twelth_root_of_two()
 
-f_notes= [f * power(trot, n) for n in range (0, 12)]
+f_notes= [f * power(trot, n) for n in range (-9, 2)]
 
 words = [phase_acc * (f / f_cpu) for f in f_notes] # 2**N * (np.array(f_notes)/f_cpu)
 

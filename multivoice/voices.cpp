@@ -18,7 +18,7 @@ const uint8_t* lu_tables[] = {
     semisine_lu,
 };
 
-const uint16_t tuning_words [] = { 462, 489, 518, 549, 582, 616, 653, 692, 733, 776, 823, 871 };
+const uint16_t tuning_words [] = { 275, 291, 308, 327, 346, 367, 388, 412, 436, 462, 489 };
 
 void init_multiv()
 {
