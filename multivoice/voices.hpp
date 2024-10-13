@@ -9,7 +9,7 @@ const static uint8_t LU_SIZE = 16; // Look-up tables size
 const static uint16_t INDEX_SIZE = 2047;
 const static uint8_t NOTES = 12;
 const static uint8_t MAX_TOP = 0x7f;
-const static uint8_t VOICES = 5;
+const static uint8_t VOICES = 3;
 const static uint8_t SKIP = 4;
 
 enum Waveform {
@@ -33,7 +33,8 @@ struct Voice
 };
 
 void init_multiv();
-void init_voice(Voice & v, uint8_t note, Waveform style);
+void init_voice(Voice & v, int16_t note, Waveform style);
+void set_voice(Voice & v, int16_t note);
 const uint8_t get_voice_output(const struct Voice& v);
 const uint16_t get_tuning_word(const struct Voice& v);
 
