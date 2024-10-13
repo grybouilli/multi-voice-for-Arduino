@@ -21,7 +21,7 @@ parser.add_argument('--skip', type=int, default=4,
 parser.add_argument('--voices', type=int, default=1,
                     help='The number of voices (default = 1)')
 parser.add_argument('--base_freq', type=int, default=440,
-                    help='The frequency from which the signal is generated (default is A3, 440Hz)')
+                    help='The frequency from which the signal is generated (default is A4, 440Hz)')
 parser.add_argument('--phase', type=float, default=0.0,
                     help='The phase at origin of the signal (default is 0)')
 parser.add_argument('--show_graph', action='store_true',
